@@ -1,0 +1,11 @@
+#idna==2.5
+#mod_wsgi==4.7.1
+#requests>=2.25.0
+django-grappelli==2.14.3
+django-nested-admin==3.3.3
+Django>=3.1.4
+markdown
+markdown2
+mysql-connector==2.2.9
+mysqlclient==2.0.3
+Pillow==8.1.0

@@ -1,0 +1,29 @@
+{% extends "pagina.html" %}
+
+{% block header %}
+	<title>{{ articulo.titulo }}</title>
+{% endblock %}
+
+{% block body %}
+	<div class="articulos">
+		<div class="col">
+			<div class="row">
+				{% for fila in articulos %}
+					<div class="col">
+						{% for a in fila %}
+							<div class="row">
+								<a class="enlace" href="articulo/{{ a.articulo.pagina.direccion }}/">
+									<img src="{{ MEDIA_URL }}{{ a.articulo.imagen.name }}" alt="{{ a.articulo.titulo }}" class="img-fluid"/>
+									<div class="titulo">
+										<p class="titulo"> {{ a.articulo.titulo }}</p>
+										<p class="author"> {{ a.articulo.autor }}</p>
+									</div>
+								</a>
+							</div>
+						{% endfor %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

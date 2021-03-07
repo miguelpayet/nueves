@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+body {
+	font-family: "Roboto"; /*, "Helvetica", "Arial", "sans-serif"*/
+}
+
+.articulo p {
+	margin: .5rem 0;
+	text-indent: 3rem;
+}
+
+.articulos {
+	margin: 3rem 0;
+}
+
+.articulos .author {
+	text-align: center;
+}
+
+.articulos .titulo {
+	font-size: 110%;
+	margin: 0.5rem 0 0 0;
+	text-align: center;
+}
+
+.articulos a.enlace {
+	color: #000;
+	text-decoration: none;
+}
+
+.articulos a.enlace:hover {
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.bonito_reencuentro .dialogo {
+	text-indent: 6rem;
+}
+
+.descripcion {
+	font-size: 120%;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	padding-left: .5rem;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+
+.pie {
+	background-color: #000;
+	min-height: 6rem;
+}
+
+.pie .social li {
+	display: inline;
+	padding-right: 0.5rem;
+}
+
+.pie ul.social {
+	height: 50px;
+	list-style: none;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: right;
+	top: 0px;
+}
+
+.polvo-negro-nivel-1 {
+	text-indent: 6rem !important;
+}
+
+.polvo-negro-nivel-2 {
+	text-indent: 9rem !important;
+}
+
+.postales_de_pandemia .agua {
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+
+.postales_de_pandemia .cien {
+	text-align: right;
+}
+
+.postales_de_pandemia .cincuenta {
+	margin-left: 40%;
+}
+
+.postales_de_pandemia .ducha {
+	letter-spacing: -0.1rem;
+	text-align: center;
+}
+
+.postales_de_pandemia .ombligo {
+	font-family: TimesNewRoman, "Times New Roman", Times, serif;
+}
+
+.postales_de_pandemia .poema {
+	text-align: center;
+}
+
+.postales_de_pandemia .setenticinco {
+	margin-left: 65%;
+}
+
+.postales_de_pandemia .veinticinco {
+	margin-left: 20%;
+}
+
+.postales_de_pandemia p {
+	margin: 2px 0;
+	text-indent: 0;
+}
+
+.postales_de_pandemia p.titulo {
+	font-weight: 700;
+	margin: 4rem 0 1rem;
+}
+
+.saqueo_invasion_pie {
+	font-size: 90%;
+	font-style: italic;
+	text-align: right;
+}
+
+table.saqueo_invasion_tabla {
+	width: 100%;
+}
+
+.saqueo_invasion_tabla td {
+	padding: 0.25rem;
+	width: 50%;
+}
+
+.saqueo_invasion_tabla, .saqueo_invasion_tabla td {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.selenio .titulo {
+	font-size: 120%;
+	font-weight: 700;
+	margin: 2rem 0 1rem;
+}

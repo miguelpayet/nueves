@@ -1,0 +1,23 @@
+{% extends "pagina.html" %}
+{% load markdownizar %}
+
+{% block body %}
+	<div>
+		<div class="row">
+			<div class="col-9">
+				<p>{{ articulo.titulo }}</p>
+				<p>{{ articulo.autor }}</p>
+			</div>
+			<div class="col-3">
+				<img src="{{ MEDIA_URL }}{{ articulo.imagen.name }}" alt="{{ titulo }}" class="img-fluid"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="articulo {{ articulo.clase }}">
+					{{ articulo.contenido | markdownizar }}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
