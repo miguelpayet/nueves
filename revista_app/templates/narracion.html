@@ -1,0 +1,43 @@
+{% extends "pagina.html" %}
+{% load markdownizar %}
+
+{% block body %}
+    <div class="narracion">
+        <div class="row">
+            <div class="col">
+                <p class="titulo">{{ narracion.titulo }}</p>
+                <p class="author centrar">{{ narracion.autor }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="{{ MEDIA_URL }}{{ narracion.imagen.name }}" alt="{{ titulo }}" class="img-fluid"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contenido {{ narracion.clase }}">
+                    {{ narracion.contenido | markdownizar }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="row biografia">
+                    <div class="col-3">
+                        <img src="{{ MEDIA_URL }}{{ narracion.foto.name }}" alt="{{ narracion.autor }}"
+                             class="img-fluid"/>
+                    </div>
+                    <div class="col-8">
+                        <div>
+                            <p class="author">{{ narracion.autor }}</p>
+                        </div>
+                        <div class="texto">
+                            {{ narracion.biografia | markdownizar }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

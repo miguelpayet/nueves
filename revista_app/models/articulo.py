@@ -1,15 +1,12 @@
 from django.db import models
 
+from . import Contenido
 
-class Articulo(models.Model):
+
+class Articulo(Contenido):
     idarticulo = models.AutoField(primary_key=True)
-    autor = models.CharField(max_length=128, blank=False, null=False, default="")
-    clase = models.CharField(max_length=45, blank=True, null=True)
-    contenido = models.TextField()
-    imagen = models.FileField(max_length=128)
-    orden = models.IntegerField(blank=False, null=False, default=0)
-    pagina = models.ForeignKey('opciones.Pagina', models.DO_NOTHING, db_column='idpagina', default=0)
-    titulo = models.CharField(max_length=128, blank=False, null=False, default="")
+    subtitulo = models.CharField(max_length=256, blank=True, null=True, default="")
+    sumilla = models.TextField()
 
     class Meta:
         managed = True
@@ -21,12 +18,16 @@ class Articulo(models.Model):
     def __unicode__(self):
         return u'%s' % self.autor
 
+    @staticmethod
+    def prefijo_url():
+        return 'articulo'
+
 
 class ArticuloImagen(models.Model):
+    articulo = models.ForeignKey(Articulo, models.DO_NOTHING, db_column='idarticulo', default=0)
     idarticuloimagen = models.AutoField(primary_key=True)
     imagen = models.FileField(max_length=128)
     texto = models.CharField(max_length=45)
-    articulo = models.ForeignKey('Articulo', models.DO_NOTHING, db_column='idarticulo', default=0)
 
     class Meta:
         managed = True

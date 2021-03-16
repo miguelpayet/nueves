@@ -1,146 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap);
 
-body {
-	font-family: "Roboto"; /*, "Helvetica", "Arial", "sans-serif"*/
+.altura {
+    line-height: 200px;
 }
 
-.articulo p {
-	margin: .5rem 0;
-	text-indent: 3rem;
+.articulo {
+    margin-top: 2rem;
 }
 
-.articulos {
-	margin: 3rem 0;
+.articulo .author {
+    font-size: 110%;
+    font-style: italic;
 }
 
-.articulos .author {
-	text-align: center;
+.articulo .contenido {
+    margin-top: 2rem;
 }
 
-.articulos .titulo {
-	font-size: 110%;
-	margin: 0.5rem 0 0 0;
-	text-align: center;
+.articulo .sumilla {
+    font-size: 120%;
+    margin-top: 2rem;
 }
 
-.articulos a.enlace {
-	color: #000;
-	text-decoration: none;
+
+.articulo .subtitulo {
+    font-size: 200%;
+    line-height: 200%;
+    text-align: center;
 }
 
-.articulos a.enlace:hover {
-	color: rgba(0, 0, 0, 0.55);
+.articulo .titulo {
+    font-size: 150%;
+    font-weight: 700;
+    line-height: 200%;
+    margin: 0.5rem 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bloquear {
+    display: inline-block;
 }
 
 .bonito_reencuentro .dialogo {
-	text-indent: 6rem;
+    text-indent: 3rem;
+}
+
+.centrar {
+    text-align: center;
 }
 
 .descripcion {
-	font-size: 120%;
-	font-weight: 700;
-	letter-spacing: 0.3rem;
-	padding-left: .5rem;
-	text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    padding-left: .5rem;
+    text-transform: uppercase;
+}
+
+.logo_maestria {
+    max-width: 75%;
+}
+
+.logo_pucp {
+    max-width: 70%;
+}
+
+.narracion .biografia {
+    margin: 2rem 0;
+    text-align: left;
+    text-indent: 0;
+}
+
+.narracion .contenido {
+    margin-top: 2rem;
+}
+
+.narracion .titulo, .narraciones .titulo {
+    font-size: 200%;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.narracion p {
+    margin: .5rem 0;
+}
+
+.narracion p.author {
+    font-size: 120% !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.narraciones .titulo {
+    font-size: 150% !important;
+    margin: 0.5rem 0 0 0;
+}
+
+.narraciones a.enlace {
+    color: #000;
+    text-decoration: none;
+}
+
+.narraciones a.enlace:hover {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.narraciones p.author {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.narraciones p.titulo {
+    font-size: 110%;
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: #000;
+    color: #000;
 }
 
 .pie {
-	background-color: #000;
-	min-height: 6rem;
+    background-color: #000;
+    margin-top: 2rem;
 }
 
 .pie .social li {
-	display: inline;
-	padding-right: 0.5rem;
+    display: inline;
+    margin-right: 0.5rem;
 }
 
 .pie ul.social {
-	height: 50px;
-	list-style: none;
-	margin-left: 0;
-	margin-right: 0;
-	text-align: right;
-	top: 0px;
+    height: 50px;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: right;
+    top: 0px;
 }
 
 .polvo-negro-nivel-1 {
-	text-indent: 6rem !important;
+    text-indent: 6rem !important;
 }
 
 .polvo-negro-nivel-2 {
-	text-indent: 9rem !important;
+    text-indent: 9rem !important;
 }
 
 .postales_de_pandemia .agua {
-	letter-spacing: 0.2em;
-	text-align: center;
+    letter-spacing: 0.2em;
+    text-align: center;
 }
 
 .postales_de_pandemia .cien {
-	text-align: right;
+    text-align: right;
 }
 
 .postales_de_pandemia .cincuenta {
-	margin-left: 40%;
+    margin-left: 40%;
 }
 
 .postales_de_pandemia .ducha {
-	letter-spacing: -0.1rem;
-	text-align: center;
+    letter-spacing: -0.1rem;
+    text-align: center;
 }
 
 .postales_de_pandemia .ombligo {
-	font-family: TimesNewRoman, "Times New Roman", Times, serif;
+    font-family: TimesNewRoman, "Times New Roman", Times, serif;
 }
 
 .postales_de_pandemia .poema {
-	text-align: center;
+    text-align: center;
 }
 
 .postales_de_pandemia .setenticinco {
-	margin-left: 65%;
+    margin-left: 65%;
 }
 
 .postales_de_pandemia .veinticinco {
-	margin-left: 20%;
+    margin-left: 20%;
 }
 
 .postales_de_pandemia p {
-	margin: 2px 0;
-	text-indent: 0;
+    margin: 2px 0;
 }
 
 .postales_de_pandemia p.titulo {
-	font-weight: 700;
-	margin: 4rem 0 1rem;
+    font-weight: 700;
+    margin: 4rem 0 1rem;
 }
 
 .saqueo_invasion_pie {
-	font-size: 90%;
-	font-style: italic;
-	text-align: right;
-}
-
-table.saqueo_invasion_tabla {
-	width: 100%;
+    font-size: 90%;
+    font-style: italic;
+    text-align: right;
 }
 
 .saqueo_invasion_tabla td {
-	padding: 0.25rem;
-	width: 50%;
+    padding: 0.25rem;
+    width: 50%;
 }
 
 .saqueo_invasion_tabla, .saqueo_invasion_tabla td {
-	border: 1px solid #000;
-	text-align: center;
+    border: 1px solid #000;
+    text-align: center;
 }
 
 .selenio .titulo {
-	font-size: 120%;
-	font-weight: 700;
-	margin: 2rem 0 1rem;
+    font-size: 120%;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+}
+
+.social a, .social a:visited, .social a:hover {
+    color: #000;
+}
+
+.thumbnail img {
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+}
+
+body {
+    font-family: Roboto;
+}
+
+table.saqueo_invasion_tabla {
+    width: 100%;
+}
+
+div.narraciones {
+    margin: 2rem 0;
 }
