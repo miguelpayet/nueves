@@ -2,12 +2,15 @@ from django.contrib import admin
 
 from revista_app.models.articulo import Articulo
 
+from revista_app.models.suscripcion import Suscripcion
 
-class ArticuloAdmin(admin.ModelAdmin):
+
+class SuscripcionAdmin(admin.ModelAdmin):
     model = Articulo
-    fields = ('pagina', 'titulo', 'subtitulo', 'autor', 'imagen', 'clase', 'sumilla', 'contenido')
-    list_display = ('titulo', 'autor',)
-    ordering = ('titulo',)
+    fields = ('email',)
+    readonly_fields = ('creacion',)
+    list_display = ('email', 'creacion',)
+    ordering = ('email',)
 
 
-admin.site.register(Articulo, ArticuloAdmin)
+admin.site.register(Suscripcion, SuscripcionAdmin)

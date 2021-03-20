@@ -1,0 +1,28 @@
+{% extends "pagina.html" %}
+{% load markdownizar %}
+
+{% block body %}
+    <div class="podcast">
+        <div class="row">
+            <div class="col">
+                <p class="titulo">{{ podcast.titulo }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="titulo">{{ podcast.sumilla }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <iframe src="https://open.spotify.com/embed-podcast/show/6f0m3IiJqMEa44EOL9YhoN" width="100%"
+                        height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="titulo">{{ podcast.descripcion }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
