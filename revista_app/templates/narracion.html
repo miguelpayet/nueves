@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-10 offset-1">
                 <div class="contenido {{ narracion.clase }}">
                     {{ narracion.contenido | markdownizar }}
                 </div>
@@ -24,11 +24,11 @@
         <div class="row">
             <div class="col-8 offset-2">
                 <div class="row biografia">
-                    <div class="col-3">
+                    <div class="col-3 col-md-4">
                         <img src="{{ MEDIA_URL }}{{ narracion.foto.name }}" alt="{{ narracion.autor }}"
                              class="img-fluid"/>
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 col-md-8">
                         <div>
                             <p class="author">{{ narracion.autor }}</p>
                         </div>

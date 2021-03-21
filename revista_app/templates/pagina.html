@@ -25,7 +25,7 @@
             <div class="col-9 offset-1">
                 <div class="row">
                     <div class="col">
-                        <p class="descripcion">{{ parametros.descripcion }}</p>
+                        <p class="titulo">{{ parametros.descripcion }}</p>
                     </div>
                 </div>
                 <div class="row">
@@ -39,8 +39,8 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     {% for o in opciones %}
-                                        <li class="nav-item"><a class="nav-link"
-                                                                href="/{{ o.direccion }}">{{ o.titulo }}</a></li>
+                                        <li class="nav-item opcion"><a class="nav-link"
+                                                                       href="/{{ o.direccion }}">{{ o.titulo }}</a></li>
                                     {% endfor %}
                                 </ul>
                             </div>
@@ -53,18 +53,18 @@
     {% block body %}{% endblock %}
     <div class="barra-inferior">
         <div class="row centrar d-flex container">
-            <div class="col col-md-12 centrar">
+            <div class="col-lg-6 col-md-12 centrar">
                 <div class="">
                     <form id="suscribir" method="post" action="/suscripcion"
                           onsubmit="console.log(new Date()); return grabar_suscripcion(this);">
                         {% csrf_token %}
                         <input type="email" name="email" required class="podcast_input"
-                               placeholder="Suscribe tu email para recibir noticias." s/>
+                               placeholder="Registra tu correo electrónico" s/>
                         <input type="submit" class="podcast_submit" value="Suscríbete a NN">
                     </form>
                 </div>
             </div>
-            <div class="col col-md-12 ">
+            <div class="col-lg-6 col-md-12 ">
                 <a href="/podcast" class="bloquear">
                     <img src="{{ MEDIA_URL }}{{ parametros.podcast.name }}" alt="{{ parametros.texto_podcast }}"
                          class="logo_maestria thumbnail">
@@ -74,23 +74,23 @@
     </div>
     <div class="pie">
         <div class="row centrar">
-            <div class="col-4 col-md-12 col-lg-6 altura">
+            <div class="col-xl-4 col-sm-4 altura">
                 <a href="{{ parametros.url_pucp }}" class="bloquear">
                     <img src="{{ MEDIA_URL }}{{ parametros.logo_pucp.name }}" alt="{{ parametros.texto_pucp }}"
                          class="logo_pucp thumbnail"/>
                 </a>
             </div>
-            <div class="col-2 col-md-12 col-lg-6 altura email">
-                <p><a href="mailto:ESCRITURACREATIVA@PUCP.EDU.PE">ESCRITURACREATIVA@PUCP.EDU.PE</a></p>
+            <div class="col-xl-2 col-sm-4 altura email">
+                <p class="email"><a href="mailto:{{ parametros.email }}">{{ parametros.email }}</a></p>
             </div>
-            <div class="col-3 col-md-12 col-lg-6 altura">
+            <div class="col-xl-3 col-sm-4 altura">
                 <a href="{{ parametros.url_maestria }}" class="bloquear">
                     <img src="{{ MEDIA_URL }}{{ parametros.logo_maestria.name }}" alt="{{ parametros.texto_maestria }}"
                          class="logo_maestria thumbnail">
                 </a>
             </div>
             {% for s in social %}
-                <div class="col-1 altura">
+                <div class="col-xl-1 col-sm-4 altura">
                     <a href="{{ s.direccion }}" class="bloquear">
                         <img src="{{ MEDIA_URL }}{{ s.imagen.name }}" alt="{{ s.texto }}" class="logo_pucp thumbnail"/>
                     </a>

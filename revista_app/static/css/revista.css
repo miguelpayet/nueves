@@ -56,6 +56,18 @@
     border: 1px solid #000
 }
 
+.cabecera .opcion {
+    font-size: 80%;
+}
+
+.cabecera .titulo {
+    font-size: 110%;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    padding-left: .5rem;
+    text-transform: uppercase
+}
+
 .centrar {
     text-align: center !important
 }
@@ -63,14 +75,6 @@
 .container {
     display: flex;
     align-items: center
-}
-
-.descripcion {
-    font-size: 120%;
-    font-weight: 700;
-    letter-spacing: .3rem;
-    padding-left: .5rem;
-    text-transform: uppercase
 }
 
 .logo_maestria {
@@ -92,29 +96,36 @@
     text-indent: 0
 }
 
+.narracion .biografia .author {
+    font-size: 85%;
+    margin: 0.5rem 0;
+    padding: 0;
+    line-height: 1rem;
+}
+
+.narracion .biografia .texto {
+    font-size: 85%;
+}
+
 .narracion .contenido {
     margin-top: 2rem
 }
 
-.narracion .titulo, .narraciones .titulo {
-    font-size: 200%;
-    margin: .5rem 0;
+.narracion .titulo {
+    font-size: 160%;
+    margin: .5rem 0 0 0;
     text-align: center
 }
 
 .narracion p {
-    margin: .5rem 0
+    margin: 1rem 0
 }
 
 .narracion p.author {
     font-size: 120% !important;
     font-weight: 700;
-    text-transform: uppercase
-}
-
-.narraciones .titulo {
-    font-size: 150% !important;
-    margin: .5rem 0 0
+    text-transform: uppercase;
+    margin: 0 0 1rem;
 }
 
 .narraciones a.enlace {
@@ -127,12 +138,16 @@
 }
 
 .narraciones p.author {
+    font-size: 90%;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+    margin: 0 0 2rem 0;
 }
 
 .narraciones p.titulo {
-    font-size: 110%
+    font-size: 120%;
+    margin: .5rem 0 0;
+    text-align: center
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -149,7 +164,7 @@
 }
 
 .pie .email a:hover {
-    text-transform: underline
+    text-decoration: underline
 }
 
 .pie .email a:link {
@@ -158,21 +173,6 @@
 
 .pie .email a:visited {
     color: #fff
-}
-
-.podcast_button {
-    height: 3rem;
-    vertical-align: baseline
-}
-
-.podcast_email {
-    height: 3rem
-}
-
-.podcast_form {
-    border: 1px solid red;
-    line-height: 3rem;
-    vertical-align: middle
 }
 
 .podcast_input, .podcast_submit {
@@ -184,15 +184,8 @@
 }
 
 .podcast_input {
-    width: 20rem
-}
-
-.podcast_input_ancho {
-    width: 300px
-}
-
-.podcast_input_boton {
-    width: 200px
+    width: 20rem;
+    font-size: 80%;
 }
 
 .polvo-negro-nivel-1 {
@@ -283,6 +276,8 @@
 
 body {
     font-family: Roboto, sans-serif;
+    xfont-size: 24px;
+    font-size: calc((1vh + 1vw) / 1.1);
 }
 
 div.narraciones {
