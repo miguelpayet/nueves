@@ -18,7 +18,6 @@ getCookie = (name) => {
         const cookies = document.cookie.split(';');
         for (let i = 0; i < cookies.length; i++) {
             const cookie = cookies[i].trim();
-            // Does this cookie string begin with the name we want?
             if (cookie.substring(0, name.length + 1) === (name + '=')) {
                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
                 break;
@@ -28,7 +27,9 @@ getCookie = (name) => {
     return cookieValue;
 }
 
-grabar_suscripcion = (correo) => {
+grabar_suscripcion = (form) => {
+    console.log(this);
+    const correo = form['email'].value;
     const myRequest = new Request('/suscripcion', {
         method: 'POST',
         headers: {
@@ -40,9 +41,19 @@ grabar_suscripcion = (correo) => {
     });
     fetch(myRequest)
         .then(response => {
-            console.log("debidamente grabado")
+            if (response.status === 200) {
+                return response.json()
+            }
+        })
+        .then(function (data) {
+            console.log(data);
+            form["email"].value = ""
+            form["email"].placeholder = data.resultado
         })
         .catch(err => {
             console.log(err)
         })
+    return false;
 }
+
+console.log("cargado");

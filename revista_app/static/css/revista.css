@@ -1,314 +1,290 @@
 @import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap";
 
 .altura {
-    line-height: 180px
+line-height:180px
 }
 
 .articulo {
-    margin-top: 2rem
+margin-top:2rem
 }
 
 .articulo .author {
-    font-size: 110%;
-    font-style: italic
+font-size:110%;
+font-style:italic
 }
 
 .articulo .contenido {
-    margin-top: 2rem
-}
-
-.articulo .sumilla {
-    font-size: 120%;
-    margin-top: 2rem
+margin-top:2rem
 }
 
 .articulo .subtitulo {
-    font-size: 200%;
-    line-height: 200%;
-    text-align: center
+font-size:200%;
+line-height:200%;
+text-align:center
+}
+
+.articulo .sumilla {
+font-size:120%;
+margin-top:2rem
 }
 
 .articulo .titulo {
-    font-size: 150%;
-    font-weight: 700;
-    line-height: 200%;
-    margin: .5rem 0 0;
-    text-align: center;
-    text-transform: uppercase
-}
-
-.bloquear {
-    display: inline-block
-}
-
-.bonito_reencuentro .dialogo {
-    text-indent: 3rem
-}
-
-.centrar {
-    text-align: center !important
-}
-
-.descripcion {
-    font-size: 120%;
-    font-weight: 700;
-    letter-spacing: .3rem;
-    padding-left: .5rem;
-    text-transform: uppercase
-}
-
-.logo_maestria {
-    max-width: 75%
-}
-
-.logo_pucp {
-    max-width: 70%
-}
-
-.narracion .biografia {
-    margin: 2rem 0;
-    text-align: left;
-    text-indent: 0
-}
-
-.narracion .contenido {
-    margin-top: 2rem
-}
-
-.narracion .titulo, .narraciones .titulo {
-    font-size: 200%;
-    margin: .5rem 0;
-    text-align: center
-}
-
-.narracion p {
-    margin: .5rem 0
-}
-
-.narracion p.author {
-    font-size: 120% !important;
-    font-weight: 700;
-    text-transform: uppercase
-}
-
-.narraciones .titulo {
-    font-size: 150% !important;
-    margin: .5rem 0 0
-}
-
-.narraciones a.enlace {
-    color: #000;
-    text-decoration: none
-}
-
-.narraciones a.enlace:hover {
-    color: rgba(0, 0, 0, 0.55)
-}
-
-.narraciones p.author {
-    font-weight: 700;
-    text-transform: uppercase
-}
-
-.narraciones p.titulo {
-    font-size: 110%
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #000
-}
-
-.pie {
-    background-color: #000;
-    margin-top: 2rem
-}
-
-.polvo-negro-nivel-1 {
-    text-indent: 6rem !important
-}
-
-.polvo-negro-nivel-2 {
-    text-indent: 9rem !important
-}
-
-.postales_de_pandemia .agua {
-    letter-spacing: .2em;
-    text-align: center
-}
-
-.postales_de_pandemia .cien {
-    text-align: right
-}
-
-.postales_de_pandemia .cincuenta {
-    margin-left: 40%
-}
-
-.postales_de_pandemia .ducha {
-    letter-spacing: -.1rem;
-    text-align: center
-}
-
-.postales_de_pandemia .ombligo {
-    font-family: TimesNewRoman, "Times New Roman", Times, serif
-}
-
-.postales_de_pandemia .poema {
-    text-align: center
-}
-
-.postales_de_pandemia .setenticinco {
-    margin-left: 65%
-}
-
-.postales_de_pandemia .veinticinco {
-    margin-left: 20%
-}
-
-.postales_de_pandemia p {
-    margin: 2px 0
-}
-
-.postales_de_pandemia p.titulo {
-    font-weight: 700;
-    margin: 4rem 0 1rem
-}
-
-.saqueo_invasion_pie {
-    font-size: 90%;
-    font-style: italic;
-    text-align: right
-}
-
-.saqueo_invasion_tabla td {
-    padding: .25rem;
-    width: 50%
-}
-
-.saqueo_invasion_tabla, .saqueo_invasion_tabla td {
-    text-align: center
-}
-
-.selenio .titulo {
-    font-size: 120%;
-    font-weight: 700;
-    margin: 2rem 0 1rem
-}
-
-.social a, .social a:visited, .social a:hover {
-    color: #000
-}
-
-.thumbnail img {
-    display: inline-block;
-    margin: auto;
-    vertical-align: middle
-}
-
-body {
-    font-family: Roboto
-}
-
-table.saqueo_invasion_tabla {
-    width: 100%
-}
-
-div.narraciones {
-    margin: 2rem 0
-}
-
-.pie .email {
-    font-size: 80%
-}
-
-.pie .email a:link {
-    color: #fff
-}
-
-.pie .email a:visited {
-    color: #fff
-}
-
-.pie .email a:hover {
-    text-transform: underline
+font-size:150%;
+font-weight:700;
+line-height:200%;
+margin:.5rem 0 0;
+text-align:center;
+text-transform:uppercase
 }
 
 .barra-inferior {
-    border-top: 1px solid #000;
-    margin: 0;
-    padding: 0;
-    height: 150px;
-    margin: 5px 0
+border-top:1px solid #000;
+padding:1rem;
+height:150px;
+margin:5px 0
 }
 
-.logo_podcast {
-    height: 50%;
-    vertical-align: middle
+.bloquear {
+display:inline-block
 }
 
-.podcast_input {
-    color: #000;
-    height: 3rem;
-    border-radius: 5px;
-    vertical-align: middle;
-    border-color: #ddd
-}
-
-.podcast_input_ancho {
-    width: 300px
-}
-
-.podcast_input_boton {
-    width: 200px
+.bonito_reencuentro .dialogo {
+text-indent:3rem
 }
 
 .borde {
-    border: 1px solid #000
+border:1px solid #000
 }
 
-.podcast-altura {
-    height: 3rem
-}
-
-.podcast_email {
-    height: 3rem
-}
-
-.podcast_button {
-    height: 3rem;
-    vertical-align: baseline
-}
-
-.podcast_input {
-    height: 3rem;
-    vertical-align: baseline;
-    width: 20rem
-}
-
-.podcast_form {
-    border: 1px solid red;
-    line-height: 3rem;
-    vertical-align: middle
+.centrar {
+text-align:center!important
 }
 
 .container {
-    display: flex;
-    align-items: center
+display:flex;
+align-items:center
 }
 
-.podcast-link {
-    margin-left: 2rem;
-    line-height: 3rem;
-    border-radius: 4px;
-    background-color: #eee
+.descripcion {
+font-size:120%;
+font-weight:700;
+letter-spacing:.3rem;
+padding-left:.5rem;
+text-transform:uppercase
 }
 
-a.podcast-link, .podcast-link a:visited, .podcast-link a:hover {
-    color: #000;
-    text-decoration: none;
-    border: 1px solid #999
+.logo_maestria {
+max-width:75%
 }
 
-a.podcast-link:hover {
-    text-decoration: underline
+.logo_podcast {
+height:50%;
+vertical-align:middle
+}
+
+.logo_pucp {
+max-width:70%
+}
+
+.narracion .biografia {
+margin:2rem 0;
+text-align:left;
+text-indent:0
+}
+
+.narracion .contenido {
+margin-top:2rem
+}
+
+.narracion .titulo,.narraciones .titulo {
+font-size:200%;
+margin:.5rem 0;
+text-align:center
+}
+
+.narracion p {
+margin:.5rem 0
+}
+
+.narracion p.author {
+font-size:120%!important;
+font-weight:700;
+text-transform:uppercase
+}
+
+.narraciones .titulo {
+font-size:150%!important;
+margin:.5rem 0 0
+}
+
+.narraciones a.enlace {
+color:#000;
+text-decoration:none
+}
+
+.narraciones a.enlace:hover {
+color:rgba(0,0,0,0.55)
+}
+
+.narraciones p.author {
+font-weight:700;
+text-transform:uppercase
+}
+
+.narraciones p.titulo {
+font-size:110%
+}
+
+.navbar-light .navbar-nav .nav-link {
+color:#000
+}
+
+.pie {
+background-color:#000;
+margin-top:1rem
+}
+
+.pie .email {
+font-size:80%
+}
+
+.pie .email a:hover {
+text-transform:underline
+}
+
+.pie .email a:link {
+color:#fff
+}
+
+.pie .email a:visited {
+color:#fff
+}
+
+.podcast_button {
+height:3rem;
+vertical-align:baseline
+}
+
+.podcast_email {
+height:3rem
+}
+
+.podcast_form {
+border:1px solid red;
+line-height:3rem;
+vertical-align:middle
+}
+
+.podcast_input, .podcast_submit {
+color:#000;
+height:3rem;
+border-radius:5px;
+vertical-align:middle;
+border-color:#ddd
+}
+
+.podcast_input {
+width:20rem
+}
+
+.podcast_input_ancho {
+width:300px
+}
+
+.podcast_input_boton {
+width:200px
+}
+
+.polvo-negro-nivel-1 {
+text-indent:6rem!important
+}
+
+.polvo-negro-nivel-2 {
+text-indent:9rem!important
+}
+
+.postales_de_pandemia .agua {
+letter-spacing:.2em;
+text-align:center
+}
+
+.postales_de_pandemia .cien {
+text-align:right
+}
+
+.postales_de_pandemia .cincuenta {
+margin-left:40%
+}
+
+.postales_de_pandemia .ducha {
+letter-spacing:-.1rem;
+text-align:center
+}
+
+.postales_de_pandemia .ombligo {
+font-family:TimesNewRoman,"Times New Roman",Times,serif
+}
+
+.postales_de_pandemia .poema {
+text-align:center
+}
+
+.postales_de_pandemia .setenticinco {
+margin-left:65%
+}
+
+.postales_de_pandemia .veinticinco {
+margin-left:20%
+}
+
+.postales_de_pandemia p {
+margin:2px 0
+}
+
+.postales_de_pandemia p.titulo {
+font-weight:700;
+margin:4rem 0 1rem
+}
+
+.saqueo_invasion_pie {
+font-size:90%;
+font-style:italic;
+text-align:right
+}
+
+.saqueo_invasion_tabla td {
+padding:.25rem;
+width:50%
+}
+
+.saqueo_invasion_tabla,.saqueo_invasion_tabla td {
+text-align:center
+}
+
+.selenio .titulo {
+font-size:120%;
+font-weight:700;
+margin:2rem 0 1rem
+}
+
+.social a,.social a:visited,.social a:hover {
+color:#000
+}
+
+.thumbnail img {
+display:inline-block;
+margin:auto;
+vertical-align:middle
+}
+
+body {
+font-family:Roboto
+}
+
+div.narraciones {
+margin:2rem 0
+}
+
+table.saqueo_invasion_tabla {
+width:100%
 }

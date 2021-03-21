@@ -2,6 +2,8 @@ from django.views.generic import TemplateView
 import json
 from revista_app.models import Suscripcion
 
+from django.http import HttpResponse
+
 
 class SuscripcionView(TemplateView):
 
@@ -12,3 +14,5 @@ class SuscripcionView(TemplateView):
         susc = Suscripcion()
         susc.email = data['email']
         susc.save()
+        respuesta = {'resultado': 'Correo registrado existosamente'}
+        return HttpResponse(json.dumps(respuesta), content_type='application/json')

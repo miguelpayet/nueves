@@ -47,14 +47,15 @@
     </div>
     {% block body %}{% endblock %}
     <div class="barra-inferior">
-        <div class="row centrar altura">
-            <div class="col ">
-                <div class="container">
-                    <form class="centrar">
-                        <input type="email" class="podcast_input"/>
-                        <!--input type="button" class="podcast_button" value="hola"/-->
+        <div class="row centrar d-flex container">
+            <div class="col centrar">
+                <div class="">
+                    <form id="suscribir" method="post" action="/suscripcion"
+                          onsubmit="console.log(new Date()); return grabar_suscripcion(this);">
+                        {% csrf_token %}
+                        <input type="email" name="email" required class="podcast_input" placeholder="Suscribe tu email para recibir noticias."/>
+                        <input type="submit" class="podcast_submit" value="Suscríbete a NN">
                     </form>
-                    <a href="#" class="podcast-link">Suscríbete a NN</a>
                 </div>
             </div>
             <div class="col ">
