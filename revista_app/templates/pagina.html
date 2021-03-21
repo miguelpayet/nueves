@@ -31,7 +31,6 @@
                 <div class="row">
                     <div class="col">
                         <nav class="navbar navbar-expand-xl navbar-light bg-white">
-                            <span class="navbar-brand">&nbsp;</span>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +40,8 @@
                                 <ul class="navbar-nav">
                                     {% for o in opciones %}
                                         <li class="nav-item opcion"><a class="nav-link"
-                                                                       href="/{{ o.direccion }}">{{ o.titulo }}</a></li>
+                                                                       href="/{{ o.direccion }}">{{ o.titulo }}</a>
+                                        </li>
                                     {% endfor %}
                                 </ul>
                             </div>

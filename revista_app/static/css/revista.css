@@ -154,6 +154,10 @@
     color: #000
 }
 
+.navbar-toggler {
+    font-size: 110%;
+}
+
 .pie {
     background-color: #000;
     margin-top: 1rem
