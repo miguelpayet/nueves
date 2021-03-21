@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block body %}
-    <div class="narraciones">
+    <div class="narraciones centrar">
         {% for fila in narraciones %}
             <div class="row">
                 {% for a in fila %}
-                    <div class="col">
+                    <div class="col-lg-4 col-md-12">
                         <a class="enlace" href="/{{ prefijo_url }}/{{ a.narracion.pagina.direccion }}/">
                             <img src="{{ MEDIA_URL }}{{ a.narracion.caratula.name }}" alt="{{ a.caratula.titulo }}"
                                  class="img-fluid"/>

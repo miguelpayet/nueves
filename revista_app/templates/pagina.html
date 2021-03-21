@@ -30,7 +30,12 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <nav class="navbar navbar-expand-xl navbar-light bg-white">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     {% for o in opciones %}
@@ -48,17 +53,18 @@
     {% block body %}{% endblock %}
     <div class="barra-inferior">
         <div class="row centrar d-flex container">
-            <div class="col centrar">
+            <div class="col col-md-12 centrar">
                 <div class="">
                     <form id="suscribir" method="post" action="/suscripcion"
                           onsubmit="console.log(new Date()); return grabar_suscripcion(this);">
                         {% csrf_token %}
-                        <input type="email" name="email" required class="podcast_input" placeholder="Suscribe tu email para recibir noticias."/>
+                        <input type="email" name="email" required class="podcast_input"
+                               placeholder="Suscribe tu email para recibir noticias." s/>
                         <input type="submit" class="podcast_submit" value="Suscríbete a NN">
                     </form>
                 </div>
             </div>
-            <div class="col ">
+            <div class="col col-md-12 ">
                 <a href="/podcast" class="bloquear">
                     <img src="{{ MEDIA_URL }}{{ parametros.podcast.name }}" alt="{{ parametros.texto_podcast }}"
                          class="logo_maestria thumbnail">
@@ -68,16 +74,16 @@
     </div>
     <div class="pie">
         <div class="row centrar">
-            <div class="col-4 altura">
+            <div class="col-4 col-md-12 col-lg-6 altura">
                 <a href="{{ parametros.url_pucp }}" class="bloquear">
                     <img src="{{ MEDIA_URL }}{{ parametros.logo_pucp.name }}" alt="{{ parametros.texto_pucp }}"
                          class="logo_pucp thumbnail"/>
                 </a>
             </div>
-            <div class="col-2 altura email">
+            <div class="col-2 col-md-12 col-lg-6 altura email">
                 <p><a href="mailto:ESCRITURACREATIVA@PUCP.EDU.PE">ESCRITURACREATIVA@PUCP.EDU.PE</a></p>
             </div>
-            <div class="col-3 altura">
+            <div class="col-3 col-md-12 col-lg-6 altura">
                 <a href="{{ parametros.url_maestria }}" class="bloquear">
                     <img src="{{ MEDIA_URL }}{{ parametros.logo_maestria.name }}" alt="{{ parametros.texto_maestria }}"
                          class="logo_maestria thumbnail">
@@ -97,5 +103,6 @@
             integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
             crossorigin="anonymous"></script>
 </div>
+{% include "gridsize.html" %}
 </body>
 </html>

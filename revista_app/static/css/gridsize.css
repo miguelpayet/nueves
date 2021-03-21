@@ -1,0 +1,71 @@
+ul.gridsize {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gridsize li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.grid-xs {
+    background-color: #000;
+}
+
+.grid-sm {
+    background-color: #000;
+}
+
+.grid-md {
+    background-color: #000;
+}
+
+.grid-lg {
+    background-color: #000;
+}
+
+.grid-xl {
+    background-color: #000;
+}
+
+.grid-xxl {
+    background-color: #000;
+}
+
+@media (min-width: 0px) {
+    .grid-xs {
+        background-color: red;
+    }
+}
+
+@media (min-width: 576px) {
+    .grid-sm {
+        background-color: red;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-md {
+        background-color: red;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-lg {
+        background-color: red;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-xl {
+        background-color: red;
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid-xxl {
+        background-color: red;
+    }
+}
