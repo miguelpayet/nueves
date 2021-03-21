@@ -39,9 +39,9 @@
 
 .barra-inferior {
     border-top: 1px solid #000;
-    padding: 1rem;
+    padding-top: .5rem;
     height: 150px;
-    margin: 5px 0
+    margin-bottom: 1rem;
 }
 
 .bloquear {
@@ -70,11 +70,6 @@
 
 .centrar {
     text-align: center !important
-}
-
-.container {
-    display: flex;
-    align-items: center
 }
 
 .logo_maestria {
@@ -160,7 +155,8 @@
 
 .pie {
     background-color: #000;
-    margin-top: 1rem
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .pie .email {
@@ -188,7 +184,7 @@
 }
 
 .podcast_input {
-    width: 20rem;
+    width: 15rem;
     font-size: 80%;
 }
 
@@ -280,7 +276,6 @@
 
 body {
     font-family: Roboto, sans-serif;
-    xfont-size: 24px;
     font-size: calc((1vh + 1vw) / 1.1);
 }
 

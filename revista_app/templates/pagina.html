@@ -53,20 +53,18 @@
     </div>
     {% block body %}{% endblock %}
     <div class="barra-inferior">
-        <div class="row centrar d-flex container">
-            <div class="col-lg-6 col-md-12 centrar">
-                <div class="">
-                    <form id="suscribir" method="post" action="/suscripcion"
-                          onsubmit="console.log(new Date()); return grabar_suscripcion(this);">
-                        {% csrf_token %}
-                        <input type="email" name="email" required class="podcast_input"
-                               placeholder="Registra tu correo electrónico" s/>
-                        <input type="submit" class="podcast_submit" value="Suscríbete a NN">
-                    </form>
-                </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                <form id="suscribir" method="post" action="/suscripcion"
+                      onsubmit="return grabar_suscripcion(this);" class="align-self-center">
+                    {% csrf_token %}
+                    <input type="email" name="email" required class="podcast_input"
+                           placeholder="Registra tu correo"/>
+                    <input type="submit" class="podcast_submit" value="Suscríbete a NN">
+                </form>
             </div>
-            <div class="col-lg-6 col-md-12 ">
-                <a href="/podcast" class="bloquear">
+            <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                <a href="/podcast" class="align-self-center">
                     <img src="{{ MEDIA_URL }}{{ parametros.podcast.name }}" alt="{{ parametros.texto_podcast }}"
                          class="logo_maestria thumbnail">
                 </a>
@@ -75,24 +73,25 @@
     </div>
     <div class="pie">
         <div class="row centrar">
-            <div class="col-xl-4 col-sm-4 altura">
-                <a href="{{ parametros.url_pucp }}" class="bloquear">
+            <div class="col-xl-4 col-sm-4 d-flex justify-content-center">
+                <a href="{{ parametros.url_pucp }}" class="align-self-center">
                     <img src="{{ MEDIA_URL }}{{ parametros.logo_pucp.name }}" alt="{{ parametros.texto_pucp }}"
                          class="logo_pucp thumbnail"/>
                 </a>
             </div>
-            <div class="col-xl-2 col-sm-4 altura email">
-                <p class="email"><a href="mailto:{{ parametros.email }}">{{ parametros.email }}</a></p>
+            <div class="col-xl-2 col-sm-4 email d-flex justify-content-center">
+                <p class="email align-self-center"><a href="mailto:{{ parametros.email }}">{{ parametros.email }}</a>
+                </p>
             </div>
-            <div class="col-xl-3 col-sm-4 altura">
-                <a href="{{ parametros.url_maestria }}" class="bloquear">
+            <div class="col-xl-3 col-sm-4 d-flex justify-content-center">
+                <a href="{{ parametros.url_maestria }}" class="align-self-center">
                     <img src="{{ MEDIA_URL }}{{ parametros.logo_maestria.name }}" alt="{{ parametros.texto_maestria }}"
                          class="logo_maestria thumbnail">
                 </a>
             </div>
             {% for s in social %}
-                <div class="col-xl-1 col-sm-4 altura">
-                    <a href="{{ s.direccion }}" class="bloquear">
+                <div class="col-xl-1 col-sm-4 d-flex justify-content-center">
+                    <a href="{{ s.direccion }}" class="align-self-center">
                         <img src="{{ MEDIA_URL }}{{ s.imagen.name }}" alt="{{ s.texto }}" class="logo_pucp thumbnail"/>
                     </a>
                 </div>
