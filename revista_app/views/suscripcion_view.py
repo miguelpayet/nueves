@@ -7,7 +7,8 @@ from django.http import HttpResponse
 
 class SuscripcionView(TemplateView):
 
-    def post(self, request):
+    @staticmethod
+    def post(request):
         bytess = request.body
         my_json = bytess.decode('utf8').replace("'", '"')
         data = json.loads(my_json)

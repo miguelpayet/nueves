@@ -1,9 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap";
 
-.altura {
-    line-height: 180px
-}
-
 .articulo {
     margin-top: 2rem
 }
@@ -42,10 +38,6 @@
     padding-top: .5rem;
     height: 150px;
     margin-bottom: 1rem;
-}
-
-.bloquear {
-    display: inline-block
 }
 
 .bonito_reencuentro .dialogo {
@@ -230,9 +222,11 @@
     margin-left: 20%
 }
 
+/*
 .postales_de_pandemia p {
     margin: 2px 0
 }
+*/
 
 .postales_de_pandemia p.titulo {
     font-weight: 700;

@@ -11,12 +11,12 @@ class IndexView(ViewBase):
     template_name = 'narraciones.html'
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        self.lista_narraciones(context)
-        return context
+        self.pagina = 'inicio'
+        super().get_context_data(**kwargs)
+        self.lista_narraciones()
+        return self.context
 
-    @staticmethod
-    def lista_narraciones(context):
+    def lista_narraciones(self):
         arr_art = []
         try:
             narraciones = Narracion.objects.order_by("orden").select_related('pagina').all()
@@ -27,6 +27,6 @@ class IndexView(ViewBase):
             res = []
             for ele in split_list:
                 res.append(list(islice(temp, 0, ele)))
-            context.update({"narraciones": res, 'prefijo_url': NarracionView.prefijo_url})
+            self.context.update({"narraciones": res, 'prefijo_url': NarracionView.prefijo_url})
         except Narracion.DoesNotExist:
             raise Exception('no hay narraciones')

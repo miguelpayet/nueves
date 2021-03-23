@@ -6,21 +6,19 @@ from revista_app.models import Podcast
 
 class PodcastView(ViewBase):
     nombre_clase = 'podcast'
-    view_name = 'podcast'
-    template_name = 'podcast.html'
     prefijo_url = 'podcast'
+    template_name = 'podcast.html'
+    view_name = 'podcast'
 
     def get_context_data(self, **kwargs):
         s = super(PodcastView, self)
-        context = s.get_context_data(**kwargs)
-        self.contexto_articulo(context)
-        return context
+        s.get_context_data(**kwargs)
+        self.contexto_articulo()
+        return self.context
 
-    @staticmethod
-    def contexto_articulo(context):
+    def contexto_articulo(self):
         try:
             art = Podcast.objects.all().first()
-            context.update({'podcast': art})
         except Articulo.DoesNotExist:
             raise Exception('no hay podcast')
-        context.update({'articulo': art})
+        self.context.update({'articulo': art})

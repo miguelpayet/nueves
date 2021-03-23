@@ -3,22 +3,21 @@ from .view_base import ViewBase
 
 
 class NarracionView(ViewBase):
-    nombre_clase = 'articulo'
-    view_name = 'narracion'
-    template_name = 'narracion.html'
+    nombre_clase = 'narracion'
     prefijo_url = 'narracion'
+    template_name = 'narracion.html'
+    view_name = 'narracion'
 
     def get_context_data(self, **kwargs):
+        self.pagina = kwargs["narracion"]
         s = super(NarracionView, self)
-        context = s.get_context_data(**kwargs)
-        self.contexto_narracion(kwargs['narracion'], context)
-        return context
+        s.get_context_data(**kwargs)
+        self.contexto_narracion(kwargs['narracion'])
+        return self.context
 
-    @staticmethod
-    def contexto_narracion(narracion, context):
+    def contexto_narracion(self, narracion):
         try:
             art = Narracion.objects.get(pagina__direccion=narracion)
-            context.update({'narracion': art})
         except Narracion.DoesNotExist:
             raise Exception('no hay narración %s' % narracion)
-        context.update({'narracion': art})
+        self.context.update({'narracion': art})
