@@ -55,5 +55,3 @@ grabar_suscripcion = (form) => {
         })
     return false;
 }
-
-console.log("cargado");
