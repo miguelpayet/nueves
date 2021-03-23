@@ -11,7 +11,7 @@ class IndexView(ViewBase):
     template_name = 'narraciones.html'
 
     def get_context_data(self, **kwargs):
-        self.pagina = 'inicio'
+        self.pagina = ''
         super().get_context_data(**kwargs)
         self.lista_narraciones()
         return self.context
