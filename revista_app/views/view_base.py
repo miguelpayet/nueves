@@ -16,10 +16,7 @@ def obtener_clase(opcion):
 
 
 class ViewBase(TemplateView):
-    nombre_clase = ''
-    secciones = []
     template_name = 'pagina.html'
-    view_name = ''
 
     def __init__(self):
         self.pagina = ''
@@ -27,7 +24,6 @@ class ViewBase(TemplateView):
         self.context = {}
 
     def get_context_data(self, **kwargs):
-        self.context.update({'vista': self.view_name})
         self.contexto_parametros()
         self.contexto_opciones()
         self.contexto_pagina()

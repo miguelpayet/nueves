@@ -5,18 +5,16 @@ from revista_app.models import Podcast
 
 
 class PodcastView(ViewBase):
-    nombre_clase = 'podcast'
     prefijo_url = 'podcast'
     template_name = 'podcast.html'
-    view_name = 'podcast'
 
     def get_context_data(self, **kwargs):
         s = super(PodcastView, self)
         s.get_context_data(**kwargs)
-        self.contexto_articulo()
+        self.contexto_podcast()
         return self.context
 
-    def contexto_articulo(self):
+    def contexto_podcast(self):
         try:
             art = Podcast.objects.all().first()
         except Articulo.DoesNotExist:

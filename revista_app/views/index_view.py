@@ -6,7 +6,6 @@ from revista_app.views.view_base import ViewBase
 
 
 class IndexView(ViewBase):
-    nombre_clase = 'inicio'
     view_name = 'Inicio'
     template_name = 'narraciones.html'
 

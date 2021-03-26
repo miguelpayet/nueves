@@ -3,10 +3,8 @@ from .view_base import ViewBase
 
 
 class NarracionView(ViewBase):
-    nombre_clase = 'narracion'
     prefijo_url = 'narracion'
     template_name = 'narracion.html'
-    view_name = 'narracion'
 
     def get_context_data(self, **kwargs):
         self.pagina = kwargs["narracion"]
