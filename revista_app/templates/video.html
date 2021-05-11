@@ -1,0 +1,34 @@
+{% extends "pagina.html" %}
+{% load markdownizar %}
+
+{% block body %}
+    <div class="articulo">
+        <div class="row">
+            <div class="col">
+                <p class="titulo">{{ video.titulo }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="subtitulo">{{ video.subtitulo }}</p>
+            </div>
+        </div>
+        <div class="row align-content-center">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <iframe width="560" height="315" src="{{ video.direccion }}"
+                            title="{{ video.subtitulo }}"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contenido {{ video.clase }}">
+                    {{ video.contenido | markdownizar }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
