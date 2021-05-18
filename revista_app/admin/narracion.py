@@ -4,9 +4,8 @@ from revista_app.models.narracion import Narracion
 
 
 class NarracionAdmin(admin.ModelAdmin):
-    model = Narracion
-    fields = ('orden', 'pagina', 'titulo', 'contenido', 'autor', 'biografia', 'caratula', 'imagen', 'foto', 'clase')
-    list_display = ('idnarracion', 'orden', 'titulo', 'autor', 'caratula')
+    fields = ('orden', 'pagina', 'titulo', 'contenido', 'autor', 'caratula', 'imagen', 'clase')
+    list_display = ('orden', 'titulo', 'autor', 'caratula')
     ordering = ('orden',)
 
 

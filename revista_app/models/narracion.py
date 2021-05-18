@@ -4,9 +4,8 @@ from . import Contenido
 
 
 class Narracion(Contenido):
-    biografia = models.TextField()
+    autor = models.ForeignKey('Autor', on_delete=models.DO_NOTHING, db_column='idautor')
     caratula = models.FileField(max_length=128, blank=True, verbose_name='Imagen de carátula')
-    foto = models.FileField(max_length=128, blank=True, verbose_name='Foto del autor')
     idnarracion = models.AutoField(primary_key=True)
     orden = models.IntegerField(blank=False, null=False, default=0)
 

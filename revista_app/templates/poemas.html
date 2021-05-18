@@ -1,0 +1,27 @@
+{% extends "pagina.html" %}
+{% load markdownizar %}
+
+{% block body %}
+    {% for p in poemas %}
+        <div class="poema">
+            <div class="row">
+                <div class="col ilustracion">
+                    <img src="{{ MEDIA_URL }}{{ p.poema.imagen.name }}" alt="{{ p.poema.titulo }}" class="img-fluid"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col titulo">
+                    <div>{{ p.poema.titulo }}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>{{ p.poema.contenido | markdownizar }}</div>
+                </div>
+            </div>
+            <div class="autor">
+                {% include "autor.html" with autor=p.poema.autor %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

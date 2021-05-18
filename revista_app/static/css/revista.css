@@ -64,6 +64,10 @@
     text-align: center !important
 }
 
+.derecha {
+    text-align: right;
+}
+
 .logo_maestria {
     max-width: 75%
 }
@@ -77,20 +81,20 @@
     max-width: 70%
 }
 
-.narracion .biografia {
+.biografia {
     margin: 2rem 0;
     text-align: left;
     text-indent: 0
 }
 
-.narracion .biografia .author {
+.biografia .author {
     font-size: 85%;
     margin: 0.5rem 0;
     padding: 0;
     line-height: 1rem;
 }
 
-.narracion .biografia .texto {
+.biografia .texto {
     font-size: 85%;
 }
 
@@ -98,7 +102,7 @@
     margin-top: 2rem
 }
 
-.narracion .titulo {
+.narracion .titulo, .poema .titulo {
     font-size: 160%;
     margin: .5rem 0 0 0;
     text-align: center
@@ -108,7 +112,7 @@
     margin: 1rem 0
 }
 
-.narracion p.author {
+.narracion p.author, .poema p.author  {
     font-size: 120% !important;
     font-weight: 700;
     text-transform: uppercase;
@@ -180,6 +184,18 @@
     font-size: 80%;
 }
 
+.poema .autor {
+    margin: 2rem 0;
+}
+
+.poema .ilustracion {
+    margin: 2rem 0;
+}
+
+.poema .quince {
+    margin-left: 15%
+}
+
 .polvo-negro-nivel-1 {
     text-indent: 6rem !important
 }
@@ -222,12 +238,6 @@
     margin-left: 20%
 }
 
-/*
-.postales_de_pandemia p {
-    margin: 2px 0
-}
-*/
-
 .postales_de_pandemia p.titulo {
     font-weight: 700;
     margin: 4rem 0 1rem
@@ -243,6 +253,7 @@
     font-style: italic;
     padding-left: 6rem;
 }
+
 .saqueo_invasion_tabla {
     border: 1px solid #000;
 }
