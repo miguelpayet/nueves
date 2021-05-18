@@ -1,4 +1,5 @@
 {% extends "pagina.html" %}
+{% load markdownizar %}
 
 {% block header %}
     <title>{{ narracion.titulo }}</title>
@@ -21,6 +22,33 @@
                     </div>
                 {% endfor %}
             </div>
+        {% endfor %}
+    </div>
+    <div class="textos">
+        {% for t in textos %}
+            {% if t.texto.imagen %}
+                <div class="row">
+                    <div class="col imagen">
+                        <img src="{{ MEDIA_URL }}{{ t.texto.imagen.name }}" alt="{{ t.texto.titulo }}"
+                             class="img-fluid"/>
+                    </div>
+                </div>
+            {% endif %}
+            <div class="row">
+                <div class="col">
+                    <p class="titulo">{{ t.texto.titulo }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    {{ t.texto.contenido | markdownizar }}
+                </div>
+            </div>
+            {% if t.texto.url %}
+                <p class="centrar">
+                    <a class="blackbtn" href="{{ t.texto.url }}">{{ t.texto.texto_url }}</a>
+                </p>
+            {% endif %}
         {% endfor %}
     </div>
 {% endblock %}

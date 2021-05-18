@@ -6,4 +6,5 @@ from .podcast import Podcast
 from .poema import Poema
 from .social import Social
 from .suscripcion import Suscripcion
+from .texto import Texto
 from .video import Video

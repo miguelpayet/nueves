@@ -112,7 +112,7 @@
     margin: 1rem 0
 }
 
-.narracion p.author, .poema p.author  {
+.narracion p.author, .poema p.author {
     font-size: 120% !important;
     font-weight: 700;
     text-transform: uppercase;
@@ -275,6 +275,35 @@
 
 .social a, .social a:visited, .social a:hover {
     color: #000
+}
+
+.textos {
+    margin: 2rem 0;
+}
+
+.textos .blackbtn {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.textos .blackbtn:hover {
+    background-color: #666;
+    color: #eee;
+}
+
+
+.textos .imagen {
+    margin: 2rem 0;
+}
+
+.textos p.titulo {
+    font-size: 120%;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-align: center;
 }
 
 .thumbnail img {
