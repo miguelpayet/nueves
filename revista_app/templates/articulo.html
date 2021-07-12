@@ -15,11 +15,13 @@
                 </div>
             </div>
         {% endif %}
-        <div class="row">
-            <div class="col">
-                <img src="{{ MEDIA_URL }}{{ articulo.imagen.name }}" alt="{{ titulo }}" class="img-fluid"/>
+        {% if articulo.imagen %}
+            <div class="row">
+                <div class="col">
+                    <img src="{{ MEDIA_URL }}{{ articulo.imagen.name }}" alt="{{ titulo }}" class="img-fluid"/>
+                </div>
             </div>
-        </div>
+        {% endif %}
         <div class="row">
             <div class="col">
                 <div class="sumilla {{ articulo.clase }}">
