@@ -1,6 +1,11 @@
 {% extends "pagina.html" %}
 {% load markdownizar %}
 
+{% block header %}
+    <title>NN - Nueve Poemas</title>
+    <meta property="og:title" content="NN - Nueve Poemas"/>
+{% endblock %}
+
 {% block body %}
     {% for p in poemas %}
         <div class="poema">

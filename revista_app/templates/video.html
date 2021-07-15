@@ -1,6 +1,11 @@
 {% extends "pagina.html" %}
 {% load markdownizar %}
 
+{% block header %}
+    <title>NN - {{ video.titulo }}</title>
+    <meta property="og:title" content="NN - {{ video.titulo }}"/>
+{% endblock %}
+
 {% block body %}
     <div class="articulo">
         <div class="row">
